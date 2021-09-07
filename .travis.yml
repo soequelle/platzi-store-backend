@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
+git:
+  depth: 3
+scripts:
+  - yarn test
+notifications:
+  email:
+    recipients:
+      - soequelletindolu@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: b810cdb5-4c7f-4b03-92be-c899cea7dde9
+  app: soequelle-store-backend
+  on:
+    repo: soequelle/platzi-store-backend
