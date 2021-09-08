@@ -9,17 +9,18 @@ git:
   depth: 3
 scripts:
   - yarn test
-notifications:
-  email:
-    recipients:
-      - soequelletindolu@gmail.com
-    on_success: always
-    on_failure: always
+#notifications:
+#  email:
+#    recipients:
+#      - xxx@gmail.com
+#    on_success: always
+#    on_failure: always
 deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: b810cdb5-4c7f-4b03-92be-c899cea7dde9
+  api_key:
+    secure: "Fzg/VOKB1Dt4lRBCC61yBPJu7rr3/FHLQI/iUpRiiZzdwc49zbDif9loows6JBb52A7Mlq75G6JCT4p+zP09XNFZUMJxiRcwP4v4+LSheDqZyl/sk25Ti2hWeCsofdr//re6UYK3CWCbyjqx4IgWwSnGoDgRJ1PbTDpbLGgilfRdPdY84opLQJnac5C3hauG6AhDfiSVSSn65xDEYE5UryIpU1+h7PnWMtUunpE6abqdm0cdb48c29pO28BX+IJaCRew4Xi+Oqdo+cT/Ja+LzRPtjzBz+vxAjpR9tYQlJPvXSeyDcEvVdEcLpQmTI+Ij4wTztdNZkOnNKtbf7KOk3hYzSfY83hnX+EQBhPg8eByqagPM2IrlTTTA0Eo/HKjNueJT3uzffgvna9v7XAItS30K5gVHAanbmQDfIADPUAe1jf+Yff3WrWXLPHqFHjuDqXAdAae4Dr+ZTxw88thLLa7ckkylUM7w06PrDHpM0T67/AScnnqJahVkkc7L0HxU6LoWqtNo/Ipy38dREJQ19y04/PnnbqZPy+RHachfCOaLvZ0VrYoVE7fBjrnblDAOSBFqcp8q+/avq3t9PNnNgvFc5JNpp3IFZJTHSY0dEowLLHInMW3JgW1mYos4BkJZJn7Hq2OjXMC3x9bY4kN40QDl/m5CmOga3whov3KoRDs="
   app: soequelle-store-backend
   on:
     repo: soequelle/platzi-store-backend
